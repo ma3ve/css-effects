@@ -1,0 +1,112 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.container .column {
+  width: 25%;
+  height: 100%;
+  float: left;
+  border-right: 2px solid rgba(0, 0, 0, 0.5);
+  box-sizing: border-box;
+  z-index: 1;
+}
+
+.container .column :last-child {
+  border: none;
+}
+
+.container .column .content {
+  position: relative;
+  height: 100%;
+}
+.container .column .content h1 {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.1);
+  width: 100%;
+  font-size: 15em;
+  color: rgba(255, 255, 255, 0.2);
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  border-top: 2px solid rgba(0, 0, 0, 0.5);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.5);
+}
+
+.container .column .content .box {
+  position: absolute;
+  top: 50%;
+  transform: translateY(100%);
+  box-sizing: border-box;
+  padding: 40px;
+  transition: 0.5s;
+  text-align: center;
+  background: rgba(255, 255, 255, 1);
+  opacity: 0;
+}
+.container .column .content .box.active {
+  opacity: 1;
+  transform: translateY(-50%);
+}
+
+.container .column .content h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 30px;
+  color: #262626;
+}
+
+.container .column .content p {
+  font-size: 18px;
+  color: #262626;
+}
+
+.container .bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.container .column .bg1.active {
+  background: url('https://source.unsplash.com/WLUHO9A_xik/1980x1080');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  transition: 0.5s;
+}
+
+.container .column .bg2.active {
+  background: url('https://source.unsplash.com/uRtCd9R1tXI/1980x1080');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  transition: 0.5s;
+}
+
+.container .column .bg3.active {
+  background: url('https://source.unsplash.com/xOYk1Y0MjKI/1980x1080');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  transition: 0.5s;
+}
+
+.container .column .bg4.active {
+  background: url('https://source.unsplash.com/MEUdOseBlxI/1980x1080');
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  transition: 0.5s;
+}
